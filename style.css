@@ -1,0 +1,332 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "DM Serif Display", serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+.desktop-header{
+    display: none;
+}
+.header .fa-bars {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+nav {
+    background-color: white;
+    width: 50%;
+    height: 100vh;
+    border-left: 2px solid black;
+    position: fixed;
+    right: 0;
+    padding: 20px;
+    top: 0;
+    transition: all .4s ease-in-out;
+    transform: translateX(2000px);
+}
+
+nav .fa-close {
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    right: 25px;
+}
+
+nav ul {
+    padding: 30px 0;
+}
+
+nav li {
+    list-style-type: none;
+    line-height: 40px;
+    font-weight: bold;
+    font-weight: 25px;
+    transition: .4s ease;
+}
+
+nav li:hover {
+    text-decoration: underline;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+section {
+    padding: 20px;
+    border-bottom: 2px solid black;
+}
+
+.hero-page h1 {
+    font-size: 40px;
+}
+
+.hero-page ul {
+    margin-top: 20px;
+}
+
+.hero-page li {
+    list-style-type: none;
+    transition: .3s ease;
+}
+.hero-page li a:hover{
+    color: blue;
+}
+
+.hero-page a {
+    color: black;
+    transition: .3s ease;
+}
+
+.fa-globe {
+    color: rgb(135, 188, 238);
+}
+
+.fa-star {
+    color: rgb(245, 245, 28);
+}
+
+.recreate-page ul {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.recreate-page li {
+    list-style-type: circle;
+}
+
+.colors {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 20px;
+    gap: 5px;
+}
+
+.color-page .white {
+    border-radius: 200px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+.color2 {
+    background-color: #000000;
+}
+
+.color3 {
+    background-color: #7f7f7f;
+}
+
+.color4 {
+    background-color: #e8e5e480;
+}
+
+.resources-link {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.resources-link a {
+    color: black;
+    transition: .3s ease;
+}
+.resources-link a:hover{
+    color: blue;
+}
+
+.info1 {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.info2 {
+    background-color: #7f7f7f;
+    color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.info3 {
+    color: black;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.info3 a {
+    color: black;
+    font-weight: bold;
+    transition: .3s ease;
+}
+.info3 a:hover{
+    color: blue;
+}
+
+.reference {
+    padding: 20px;
+}
+
+.reference h1 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.reference .img {
+    width: 100%;
+}
+
+.img img {
+    object-fit: contain;
+    width: 100%;
+    box-shadow: 2px 2px 5px 3px rgb(196, 193, 193);
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+}
+
+footer ul {
+    margin-top: 20px;
+}
+
+footer li {
+    list-style-type: none;
+    transition: .3s ease;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 640px) {
+    .mobile-header{
+        display: none;
+    }
+    .desktop-header{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        border-bottom: 2px solid black;
+    }
+    .desktop-header ul{
+        display: flex;
+        gap: 30px;
+    }
+    .desktop-header li{
+        list-style-type: none;
+        font-size: 23px;
+        transition: .3s ease;
+    }
+    .desktop-header li:hover{
+        text-decoration: underline;
+    }
+    .desktop-header a{
+        text-decoration: none;
+        color: black;
+    }
+    .hero-page{
+        text-align: center;
+        margin: 0 20px;
+        border: 2px solid black;
+        border-bottom: none;
+    }
+    .hero-page h1{
+        font-size: 110px;
+    }
+    .hero-page h3{
+        font-size: 30px;
+    }
+    .hero-page ul{
+       display: flex;
+       justify-content: center;
+       gap: 30px;
+       font-size: 20px;
+    }
+    .section-content{
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        border: 2px solid black;
+        margin: 0 20px;
+    }
+    .recreate-page{
+        border-top: none;
+        border-bottom: none;
+        border-left: none;
+        border-right: 2px solid black;
+        
+    }
+    .color-page{
+        border-top: none;
+        border-bottom: none;
+        border-left: none;
+        border-right: 2px solid black;
+
+    }
+    .resources{
+       border: none;
+    }
+    .caption{
+        text-align: center;
+    }
+    .info-page{
+        margin: 0 20px;
+        border: 2px solid black;
+        border-bottom: none;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding: 30px;
+    }
+    .info1{
+        width: 25%;
+       padding: 30px;
+       font-size: 25px;
+    }
+    .info2{
+        width: 25%;
+       padding: 30px;
+       font-size: 25px;
+    }
+    .info3{
+      height: 110px;
+      padding: 30px;
+      font-size: 22px;
+    }
+    .reference{
+        margin: 0 20px;
+        border: 2px solid black;
+        border-bottom: none;
+    }
+    footer{
+        text-align: center;
+    }
+    footer ul{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        font-weight: bold;
+        font-size: 17px;
+    }
+    
+}
